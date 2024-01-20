@@ -1,0 +1,44 @@
+body{
+    margin: 10px;
+}
+.container
+{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(181, 202, 195);
+    padding: 20px;
+}
+.item
+{
+    background-color: blue;
+    padding: 30px;
+}
+.containerGrid
+{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    gap: 20px;
+    background-color: rgb(153, 163, 163);
+    padding:20px;
+}
+.itemGrid
+{
+    border: 3px solid black;
+    background-color: blue;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width:425px){
+    .containers{
+        grid-template-columns:repeat(2,1fr) ;
+    }
+}
+@media (max-width:768px){
+    .containers{
+        grid-template-columns:repeat(3,1fr) ;
+    }
+}
